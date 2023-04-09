@@ -10,20 +10,23 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: white;
   width: 100%;
   height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 
+/* First Section */
 .first-section {
   background-color: rgb(1, 66, 75);
   height: 95%;
   border-radius: 0 20px 20px 0;
-  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid rgb(1, 66, 75);
+  flex: 2;
+  min-width: 140px;
 }
 
 .profile-image {
@@ -58,14 +61,14 @@ body {
   margin-bottom: 40px;
   font-size: 15px;
   display: inline-block;
-  width: 100%;
+  width: 142px;
   height: 30px;
-  padding-top: 15px;
-  padding-left: 25px;
+  padding: 12px 0px 3px 0px;
 }
 
 .first-section ul li i {
-  padding-right: 7px;
+  margin-right: 7px;
+  margin-left: 26px;
 }
 
 .first-section ul li:hover {
@@ -75,13 +78,162 @@ body {
 .selected-menu-item {
   color: rgb(1, 66, 75);
   background-color: white;
-  border-left: 2px solid rgb(0, 137, 151);
-  /* border-right: 1px solid rgb(1, 66, 75); */
+  border-left: 3px solid rgb(0, 137, 151);
 }
 
 .unselected-menu-item {
   color: white;
-  /* background-color: rgb(1, 66, 75); */
   border-left: none;
   border-right: none;
+}
+
+/* Second Section */
+.second-section {
+  flex: 16;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-content img {
+  min-width: 100%;
+  height: 400px;
+}
+
+.menu-content div {
+  flex: 1;
+  margin: 0 8px;
+  /* overflow: hidden; */
+}
+
+.menu-content h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(1, 66, 75);
+}
+
+.menu-content h4 {
+  font-size: 17px;
+  line-height: 20px;
+  background-color: rgb(1, 66, 75);
+  display: inline;
+  color: white;
+  padding: 0 5px 2px 5px;
+  margin: 0;
+}
+
+.menu-content p {
+  font-size: 15px;
+  line-height: 17px;
+  padding: 0 0 0 10px;
+  color: black;
+}
+
+.left-border {
+  border-left: 5px solid rgb(1, 66, 75);
+}
+
+.none-display {
+  display: none;
+}
+
+.education-content ul {
+  list-style-type: none;
+  display: grid;
+  gap: 30px 0;
+  padding: 0;
+  margin: 0;
+  width: 5px;
+}
+
+.education-content ul li {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.education-content ul li:last-child {
+  background-color: rgb(1, 66, 75);
+  border: 1px solid rgb(1, 66, 75);
+}
+
+.education-content ul li:first-child {
+  background-color: white;
+  border: 1px solid rgb(1, 66, 75);
+}
+
+.education-content ul li:first-child:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 32px;
+  top: 2px;
+  left: 1.5px;
+  margin-left: 0;
+  background-color: rgb(1, 66, 75);
+  z-index: -1;
+}
+
+.education-content-2 {
+  display: flex;
+  align-items: center;
+}
+
+.education-content-2 div {
+  padding: 0;
+  margin: 0;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-js {
+  color: #f0db4f;
+}
+
+.fa-git-alt {
+  color: #f34f29;
+}
+
+.skills-content i {
+  padding: 0 5px 0 0;
+}
+
+.skills-content p {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(1, 66, 75);
+}
+
+.works-content a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Third Section */
+.third-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid firebrick;
+  align-items: center;
+  padding: 0;
+}
+
+.third-section a {
+  font-size: 40px;
 }
