@@ -18,13 +18,12 @@ body {
 
 /* First Section */
 .first-section {
-  background-color: rgb(1, 66, 75);
+  background-color: #3f3f3f;
   height: 95%;
   border-radius: 0 20px 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgb(1, 66, 75);
   flex: 2;
   min-width: 140px;
 }
@@ -76,9 +75,9 @@ body {
 }
 
 .selected-menu-item {
-  color: rgb(1, 66, 75);
+  color: #3f3f3f;
   background-color: white;
-  border-left: 3px solid rgb(0, 137, 151);
+  border-left: 5px solid #6f6f6f;
 }
 
 .unselected-menu-item {
@@ -106,19 +105,18 @@ body {
 .menu-content div {
   flex: 1;
   margin: 0 8px;
-  /* overflow: hidden; */
 }
 
 .menu-content h1 {
   font-size: 30px;
   line-height: 30px;
-  color: rgb(1, 66, 75);
+  color: #3f3f3f;
 }
 
 .menu-content h4 {
   font-size: 17px;
   line-height: 20px;
-  background-color: rgb(1, 66, 75);
+  background-color: #3f3f3f;
   display: inline;
   color: white;
   padding: 0 5px 2px 5px;
@@ -129,11 +127,11 @@ body {
   font-size: 15px;
   line-height: 17px;
   padding: 0 0 0 10px;
-  color: black;
+  color: #5f5f5f;
 }
 
 .left-border {
-  border-left: 5px solid rgb(1, 66, 75);
+  border-left: 5px solid #3f3f3f;
 }
 
 .none-display {
@@ -159,13 +157,13 @@ body {
 }
 
 .education-content ul li:last-child {
-  background-color: rgb(1, 66, 75);
-  border: 1px solid rgb(1, 66, 75);
+  background-color: #3f3f3f;
+  border: 1px solid #3f3f3f;
 }
 
 .education-content ul li:first-child {
   background-color: white;
-  border: 1px solid rgb(1, 66, 75);
+  border: 1px solid #3f3f3f;
 }
 
 .education-content ul li:first-child:before {
@@ -176,7 +174,7 @@ body {
   top: 2px;
   left: 1.5px;
   margin-left: 0;
-  background-color: rgb(1, 66, 75);
+  background-color: #3f3f3f;
   z-index: -1;
 }
 
@@ -216,7 +214,7 @@ body {
   text-align: center;
   border-radius: 3px;
   color: white;
-  background-color: rgb(1, 66, 75);
+  background-color: #3f3f3f;
 }
 
 .works-content a {
@@ -229,11 +227,42 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  border: 1px solid firebrick;
   align-items: center;
-  padding: 0;
+  padding: 0 4px 0 0;
+  max-width: 45px;
 }
 
 .third-section a {
   font-size: 40px;
+  text-decoration: none;
+}
+
+.third-section a {
+  color: #3f3f3f;
+  border: none;
+}
+
+.third-section a i {
+  border: none;
+}
+
+.fa-square-github:hover {
+  cursor: pointer;
+  color: #171515;
+  font-size: 45px;
+  transition: 0.5s;
+}
+
+.fa-square-twitter:hover {
+  cursor: pointer;
+  color: #1da1f2;
+  font-size: 45px;
+  transition: 0.5s;
+}
+
+.fa-square-whatsapp:hover {
+  cursor: pointer;
+  color: #4fce5d;
+  font-size: 45px;
+  transition: 0.5s;
 }
