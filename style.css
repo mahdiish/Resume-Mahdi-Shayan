@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 .resume {
@@ -25,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex: 2;
-  min-width: 140px;
+  min-width: 146px;
 }
 
 .profile-image {
@@ -77,7 +78,7 @@ body {
 .selected-menu-item {
   color: #3f3f3f;
   background-color: white;
-  border-left: 5px solid #6f6f6f;
+  border-left: 4px solid #6f6f6f;
 }
 
 .unselected-menu-item {
@@ -142,16 +143,16 @@ body {
 .education-content ul {
   list-style-type: none;
   display: grid;
-  gap: 30px 0;
+  gap: 29px 0;
   padding: 0;
   margin: 0;
   width: 5px;
 }
 
 .education-content ul li {
-  width: 3px;
-  height: 3px;
-  border-radius: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -159,21 +160,19 @@ body {
 
 .education-content ul li:last-child {
   background-color: #3f3f3f;
-  border: 1px solid #3f3f3f;
 }
 
 .education-content ul li:first-child {
-  background-color: white;
-  border: 1px solid #3f3f3f;
+  background-color: #6f6f6f;
 }
 
 .education-content ul li:first-child:before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 32px;
-  top: 2px;
-  left: 1px;
+  width: 2px;
+  height: 34px;
+  top: 4px;
+  left: 2px;
   margin-left: 0;
   background-color: #3f3f3f;
   z-index: -1;
@@ -231,7 +230,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 4px 0 0;
-  max-width: 45px;
+  max-width: 49px;
 }
 
 .third-section a {
@@ -281,7 +280,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 2;
-    min-width: 140px;
+    min-width: 146px;
   }
 
   /* Second Section */
@@ -312,18 +311,23 @@ body {
   }
 
   /* Third Section */
+  .third-section {
+    right: 0;
+    min-width: 46px;
+  }
+
   .fa-square-github:hover {
-    font-size: 40px;
+    font-size: 45px;
     transition: 0.5s;
   }
 
   .fa-square-twitter:hover {
-    font-size: 40px;
+    font-size: 45px;
     transition: 0.5s;
   }
 
   .fa-square-whatsapp:hover {
-    font-size: 40px;
+    font-size: 45px;
     transition: 0.5s;
   }
 }
@@ -345,7 +349,7 @@ body {
     align-items: center;
     flex: unset;
     width: 100%;
-    max-height: 193px;
+    max-height: 182px;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -361,7 +365,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 15px 8px 0px 8px;
+    margin: 4px 0 0 0;
     padding: 0;
     width: 100%;
   }
@@ -374,8 +378,8 @@ body {
     padding: 9px 0 0 0;
     flex: 1;
     gap: 0 0;
-    min-width: calc((100% - 20px) / 4);
-    max-width: calc((100% - 20px) / 4);
+    min-width: calc((100% - 10px) / 4);
+    max-width: calc((100% - 10px) / 4);
   }
 
   .first-section ul li:not(:last-child) {
@@ -383,20 +387,26 @@ body {
   }
 
   .first-section ul li i {
-    margin-right: 3px;
+    margin-right: 4px;
     margin-left: 0;
   }
 
   .selected-menu-item {
-    border-top: 3px solid #6f6f6f;
+    color: white;
+    background-color: #3f3f3f;
     border-left: none;
     border-radius: 5px 5px 0 0;
   }
 
   .unselected-menu-item {
-    color: white;
+    color: #8f8f8f;
     border-left: none;
     border-right: none;
+  }
+
+  /* Second Section */
+  .menu-content h4 {
+    padding: 0 5px 0 5px;
   }
 
   /* Third Section */
