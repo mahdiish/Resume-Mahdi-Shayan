@@ -1,3 +1,5 @@
+"use strict";
+// First Section
 const menuItem = document.querySelectorAll(".menu-item");
 const menuContent = document.querySelectorAll(".menu-content");
 document.addEventListener("click", function (e) {
@@ -17,6 +19,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Second Section
 // Typing Effect
 var i = 0;
 var txt = "R Front-End Developer";
@@ -31,3 +34,50 @@ function typeWriter() {
   }
   setTimeout(typeWriter, 200);
 }
+
+// Third Section
+const github = document.querySelector(".github");
+const twitter = document.querySelector(".twitter");
+const whatsapp = document.querySelector(".whatsapp");
+
+if (window.innerWidth < 600) {
+  github.innerHTML = `<i class="fa-brands fa-github"></i
+  >`;
+
+  twitter.innerHTML = `<i class="fa-brands fa-twitter"></i
+  >`;
+
+  whatsapp.innerHTML = `<i class="fa-brands fa-whatsapp"></i
+  >`;
+} else {
+  github.innerHTML = `<i class="fa-brands fa-square-github"></i
+  >`;
+
+  twitter.innerHTML = `<i class="fa-brands fa-square-twitter"></i
+  >`;
+
+  whatsapp.innerHTML = `<i class="fa-brands fa-square-whatsapp"></i
+  >`;
+}
+
+window.addEventListener("resize", (event) => {
+  if (window.innerWidth < 600) {
+    github.innerHTML = `<i class="fa-brands fa-github"></i
+    >`;
+
+    twitter.innerHTML = `<i class="fa-brands fa-twitter"></i
+    >`;
+
+    whatsapp.innerHTML = `<i class="fa-brands fa-whatsapp"></i
+    >`;
+  } else {
+    github.innerHTML = `<i class="fa-brands fa-square-github"></i
+    >`;
+
+    twitter.innerHTML = `<i class="fa-brands fa-square-twitter"></i
+    >`;
+
+    whatsapp.innerHTML = `<i class="fa-brands fa-square-whatsapp"></i
+    >`;
+  }
+});

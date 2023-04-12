@@ -98,8 +98,8 @@ body {
 }
 
 .menu-content img {
-  min-width: 100%;
-  height: 400px;
+  width: 100%;
+  height: 350px;
 }
 
 .menu-content div {
@@ -128,6 +128,7 @@ body {
   line-height: 17px;
   padding: 0 0 0 10px;
   color: #5f5f5f;
+  text-align: justify;
 }
 
 .left-border {
@@ -172,7 +173,7 @@ body {
   width: 1px;
   height: 32px;
   top: 2px;
-  left: 1.5px;
+  left: 1px;
   margin-left: 0;
   background-color: #3f3f3f;
   z-index: -1;
@@ -215,6 +216,7 @@ body {
   border-radius: 3px;
   color: white;
   background-color: #3f3f3f;
+  margin: 4px 2px;
 }
 
 .works-content a {
@@ -265,4 +267,182 @@ body {
   color: #4fce5d;
   font-size: 45px;
   transition: 0.5s;
+}
+
+/* Responsive */
+/* Max Width 830px */
+@media screen and (max-width: 830px) {
+  /* First Section */
+  .first-section {
+    background-color: #3f3f3f;
+    height: 95%;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    min-width: 140px;
+  }
+
+  /* Second Section */
+  .second-section {
+    flex: 16;
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-content img {
+    width: 400px;
+    height: 280px;
+  }
+
+  .menu-content div {
+    flex: unset;
+    margin: 8px 8px;
+    text-align: center;
+  }
+
+  .none-display {
+    display: none;
+  }
+
+  /* Third Section */
+  .fa-square-github:hover {
+    font-size: 40px;
+    transition: 0.5s;
+  }
+
+  .fa-square-twitter:hover {
+    font-size: 40px;
+    transition: 0.5s;
+  }
+
+  .fa-square-whatsapp:hover {
+    font-size: 40px;
+    transition: 0.5s;
+  }
+}
+
+/* Max Width 600px */
+@media screen and (max-width: 600px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* First Section */
+  .first-section {
+    background-color: #3f3f3f;
+    border-radius: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: unset;
+    width: 100%;
+    max-height: 193px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  .first-section ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px 8px 0px 8px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .first-section ul li {
+    margin: 0;
+    font-size: 15px;
+    display: inline-block;
+    height: 30px;
+    padding: 9px 0 0 0;
+    flex: 1;
+    gap: 0 0;
+    min-width: calc((100% - 20px) / 4);
+    max-width: calc((100% - 20px) / 4);
+  }
+
+  .first-section ul li:not(:last-child) {
+    margin-right: 1px;
+  }
+
+  .first-section ul li i {
+    margin-right: 3px;
+    margin-left: 0;
+  }
+
+  .selected-menu-item {
+    border-top: 3px solid #6f6f6f;
+    border-left: none;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .unselected-menu-item {
+    color: white;
+    border-left: none;
+    border-right: none;
+  }
+
+  /* Third Section */
+  .third-section {
+    flex: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+    max-width: unset;
+    width: 100%;
+    height: 65px;
+    background-color: #3f3f3f;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .third-section a {
+    flex: 1;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .fa-github:hover {
+    cursor: pointer;
+    color: #171515;
+    font-size: 33px;
+    transition: 0.5s;
+  }
+
+  .fa-twitter:hover {
+    cursor: pointer;
+    color: #1da1f2;
+    font-size: 33px;
+    transition: 0.5s;
+  }
+
+  .fa-whatsapp:hover {
+    cursor: pointer;
+    color: #4fce5d;
+    font-size: 33px;
+    transition: 0.5s;
+  }
 }
