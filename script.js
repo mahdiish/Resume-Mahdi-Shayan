@@ -10,7 +10,7 @@ document.addEventListener("click", function (e) {
         menuItem[index].classList.remove("selected-menu-item");
         menuItem[index].classList.add("unselected-menu-item");
         menuContent[index].classList.add("none-display");
-      } else if (menuItem[index] == element){
+      } else if (menuItem[index] == element) {
         element.classList.remove("unselected-menu-item");
         element.classList.add("selected-menu-item");
         menuContent[index].classList.remove("none-display");
